@@ -1,0 +1,2 @@
+D:\ProjetStormPortLinafoot\ProjetStormAloha\ProjetStormAloha\bin\Debug\ProjetStormAloha.exe.config
+D:\ProjetStormAloha\ProjetStormAloha\ProjetStormAloha\bin\Debug\ProjetStormAloha.exe.config
