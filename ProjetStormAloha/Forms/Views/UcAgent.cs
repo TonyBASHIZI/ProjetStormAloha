@@ -12,9 +12,26 @@ namespace ProjetStormAloha.Forms.Views
 {
     public partial class UcAgent : UserControl
     {
+        private static UcAgent _instance;
+
         public UcAgent()
         {
             InitializeComponent();
+        }
+
+        public static UcAgent Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UcAgent();
+                return _instance;
+            }
+
+            set
+            {
+                _instance = value;
+            }
         }
     }
 }
