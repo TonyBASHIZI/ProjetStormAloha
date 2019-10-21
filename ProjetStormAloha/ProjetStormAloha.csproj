@@ -47,19 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\ClassAgent.cs" />
-    <Compile Include="Classes\ClsCarte.cs" />
-    <Compile Include="Classes\ClsClasse.cs" />
-    <Compile Include="Classes\ClsClient.cs" />
-    <Compile Include="Classes\ClsCompte.cs" />
-    <Compile Include="Classes\Clsdetail_carte.cs" />
-    <Compile Include="Classes\ClsGlossaire.cs" />
-    <Compile Include="Classes\ClsMatch.cs" />
-    <Compile Include="Classes\ClsPaiement.cs" />
-    <Compile Include="Classes\ClsPOS.cs" />
-    <Compile Include="Classes\ClsRecharge.cs" />
-    <Compile Include="Classes\ClsSite.cs" />
-    <Compile Include="Classes\ClsStade.cs" />
+    <Compile Include="Classes\Config\ClassAppConfig.cs" />
+    <Compile Include="Classes\Config\ClassConstant.cs" />
+    <Compile Include="Classes\Model\ClassAgent.cs" />
+    <Compile Include="Classes\ClassBase.cs" />
+    <Compile Include="Classes\Model\ClassCarte.cs" />
+    <Compile Include="Classes\ClassPersonne.cs" />
+    <Compile Include="Classes\Model\ClassUser.cs" />
+    <Compile Include="Classes\Model\ClassClient.cs" />
+    <Compile Include="Classes\Model\ClassCompte.cs" />
+    <Compile Include="Classes\ClassGlossaire.cs" />
+    <Compile Include="Classes\Model\ClassPos.cs" />
     <Compile Include="Forms\FormCarte.cs">
       <SubType>Form</SubType>
     </Compile>
