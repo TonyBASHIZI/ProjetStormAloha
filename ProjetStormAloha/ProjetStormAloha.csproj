@@ -34,6 +34,10 @@
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\utils\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Services" />
@@ -49,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Classes\Config\ClassAppConfig.cs" />
     <Compile Include="Classes\Config\ClassConstant.cs" />
+    <Compile Include="Classes\Connection\ClassConnection.cs" />
     <Compile Include="Classes\Model\ClassAgent.cs" />
     <Compile Include="Classes\ClassBase.cs" />
     <Compile Include="Classes\Model\ClassCarte.cs" />
