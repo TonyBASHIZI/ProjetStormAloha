@@ -1,4 +1,5 @@
-﻿using ProjetStormAloha.Forms.Views;
+﻿using ProjetStormAloha.Classes.Config;
+using ProjetStormAloha.Forms.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -76,9 +77,43 @@ namespace ProjetStormAloha.Forms
             }
         }
 
+        private void GenerateConfiguration()
+        {
+            if (!AppConfig.InitialDirectoryExist())
+            {
+                AppConfig.CreateInitialDirectory();
+
+                if (!AppConfig.ConnectionStringExist())
+                {
+                    AppConfig.CreateConnectionDirectory();
+                    AppConfig.CreateConnectionString();
+                }
+            }
+            else
+            {
+                if (!AppConfig.ConnectionStringExist())
+                {
+                    AppConfig.CreateConnectionDirectory();
+                    AppConfig.CreateConnectionString();
+                }
+
+                if (AppConfig.ConnectionStringEmpty())
+                {
+                    MessageBox.Show(this, "Veuillez contacter l'administrateur système pour la configuration.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Close();
+                }
+            }
+        }
+
+        public void RefreshOnlineStatus(bool autologout = false)
+        {
+            
+        }
+
         private void FormMain_Load(object sender, EventArgs e)
         {
-
+            GenerateConfiguration();
+            RefreshOnlineStatus();
         }
 
         private void MenuExit_Click(object sender, EventArgs e)

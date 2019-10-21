@@ -58,6 +58,7 @@
     <Compile Include="Classes\ClassBase.cs" />
     <Compile Include="Classes\Model\ClassCarte.cs" />
     <Compile Include="Classes\ClassPersonne.cs" />
+    <Compile Include="Classes\Model\ClassDetailCompte.cs" />
     <Compile Include="Classes\Model\ClassUser.cs" />
     <Compile Include="Classes\Model\ClassClient.cs" />
     <Compile Include="Classes\Model\ClassCompte.cs" />
@@ -195,6 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

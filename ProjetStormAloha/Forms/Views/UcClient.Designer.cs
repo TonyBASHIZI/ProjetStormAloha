@@ -45,12 +45,15 @@
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.Reload = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.Print = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            this.Print = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.GridView = new System.Windows.Forms.DataGridView();
@@ -98,12 +101,15 @@
             this.toolStripSeparator10,
             this.toolStripSeparator11,
             this.toolStripSeparator17,
+            this.Reload,
             this.toolStripSeparator13,
             this.toolStripSeparator12,
-            this.Print,
             this.toolStripSeparator14,
             this.toolStripSeparator15,
-            this.toolStripSeparator16});
+            this.Print,
+            this.toolStripSeparator16,
+            this.toolStripSeparator18,
+            this.toolStripSeparator19});
             this.ToolStrip.Location = new System.Drawing.Point(0, 0);
             this.ToolStrip.Name = "ToolStrip";
             this.ToolStrip.Size = new System.Drawing.Size(983, 25);
@@ -197,6 +203,15 @@
             this.toolStripSeparator17.Name = "toolStripSeparator17";
             this.toolStripSeparator17.Size = new System.Drawing.Size(6, 25);
             // 
+            // Reload
+            // 
+            this.Reload.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Reload.Image = global::ProjetStormAloha.Properties.Resources.refresh;
+            this.Reload.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Reload.Name = "Reload";
+            this.Reload.Size = new System.Drawing.Size(23, 22);
+            this.Reload.Text = "toolStripButton1";
+            // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
@@ -206,15 +221,6 @@
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(6, 25);
-            // 
-            // Print
-            // 
-            this.Print.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Print.Image = global::ProjetStormAloha.Properties.Resources.print;
-            this.Print.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Print.Name = "Print";
-            this.Print.Size = new System.Drawing.Size(23, 22);
-            this.Print.Text = "toolStripButton1";
             // 
             // toolStripSeparator14
             // 
@@ -226,10 +232,29 @@
             this.toolStripSeparator15.Name = "toolStripSeparator15";
             this.toolStripSeparator15.Size = new System.Drawing.Size(6, 25);
             // 
+            // Print
+            // 
+            this.Print.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Print.Image = global::ProjetStormAloha.Properties.Resources.print;
+            this.Print.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Print.Name = "Print";
+            this.Print.Size = new System.Drawing.Size(23, 22);
+            this.Print.Text = "toolStripButton1";
+            // 
             // toolStripSeparator16
             // 
             this.toolStripSeparator16.Name = "toolStripSeparator16";
             this.toolStripSeparator16.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator18
+            // 
+            this.toolStripSeparator18.Name = "toolStripSeparator18";
+            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator19
+            // 
+            this.toolStripSeparator19.Name = "toolStripSeparator19";
+            this.toolStripSeparator19.Size = new System.Drawing.Size(6, 25);
             // 
             // groupBox1
             // 
@@ -538,5 +563,8 @@
         private System.Windows.Forms.TextBox TxtPostnom;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripButton Reload;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
     }
 }

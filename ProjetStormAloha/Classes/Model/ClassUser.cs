@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetStormAloha.Classes
+namespace ProjetStormAloha.Classes.Model
 {
     public class User : Base
     {
@@ -29,10 +29,14 @@ namespace ProjetStormAloha.Classes
 
         public int IdSession { get; set; }
 
-        public int UsernameSession { get; set; }
+        public string UsernameSession { get; set; }
+
+        public string PasswordSession { get; set; }
 
         public string Username { get; set; }
 
         public string Password { get; set; }
+
+        public string Etat { get; set; }
     }
 }

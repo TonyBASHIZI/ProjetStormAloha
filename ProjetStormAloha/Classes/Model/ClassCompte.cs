@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProjetStormAloha.Classes
+namespace ProjetStormAloha.Classes.Model
 {
     public class Compte : Base
     {

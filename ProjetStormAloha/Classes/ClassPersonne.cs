@@ -2,6 +2,8 @@
 {
     public abstract class Personne : Base
     {
+        public string Matricule { get; set; }
+
         public string Nom { get; set; }
 
         public string Postnom { get; set; }
