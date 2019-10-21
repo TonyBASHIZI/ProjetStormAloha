@@ -56,9 +56,8 @@
             this.GridView = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.TxtPassword = new System.Windows.Forms.TextBox();
-            this.TxtUsername = new System.Windows.Forms.TextBox();
+            this.TxtNumero = new System.Windows.Forms.TextBox();
+            this.TxtDesignation = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ToolStrip.SuspendLayout();
@@ -227,12 +226,12 @@
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 29);
+            this.groupBox1.Location = new System.Drawing.Point(3, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(977, 502);
+            this.groupBox1.Size = new System.Drawing.Size(977, 503);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Gestion des agents";
+            this.groupBox1.Text = "Gestion des comptes";
             // 
             // groupBox3
             // 
@@ -241,9 +240,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.GridView);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(9, 178);
+            this.groupBox3.Location = new System.Drawing.Point(9, 141);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(960, 318);
+            this.groupBox3.Size = new System.Drawing.Size(960, 356);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             // 
@@ -262,7 +261,7 @@
             this.GridView.Name = "GridView";
             this.GridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridView.ShowEditingIcon = false;
-            this.GridView.Size = new System.Drawing.Size(954, 296);
+            this.GridView.Size = new System.Drawing.Size(954, 334);
             this.GridView.TabIndex = 0;
             // 
             // id
@@ -275,43 +274,33 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.TxtPassword);
-            this.groupBox2.Controls.Add(this.TxtUsername);
+            this.groupBox2.Controls.Add(this.TxtNumero);
+            this.groupBox2.Controls.Add(this.TxtDesignation);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(9, 32);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(545, 131);
+            this.groupBox2.Size = new System.Drawing.Size(545, 103);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
             // 
-            // comboBox1
+            // TxtNumero
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(379, 44);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 25);
-            this.comboBox1.TabIndex = 21;
+            this.TxtNumero.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNumero.Location = new System.Drawing.Point(137, 59);
+            this.TxtNumero.Name = "TxtNumero";
+            this.TxtNumero.Size = new System.Drawing.Size(183, 22);
+            this.TxtNumero.TabIndex = 18;
+            this.TxtNumero.UseSystemPasswordChar = true;
             // 
-            // TxtPassword
+            // TxtDesignation
             // 
-            this.TxtPassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPassword.Location = new System.Drawing.Point(151, 59);
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(195, 22);
-            this.TxtPassword.TabIndex = 18;
-            this.TxtPassword.UseSystemPasswordChar = true;
-            // 
-            // TxtUsername
-            // 
-            this.TxtUsername.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsername.Location = new System.Drawing.Point(151, 29);
-            this.TxtUsername.Name = "TxtUsername";
-            this.TxtUsername.Size = new System.Drawing.Size(195, 22);
-            this.TxtUsername.TabIndex = 17;
+            this.TxtDesignation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDesignation.Location = new System.Drawing.Point(137, 29);
+            this.TxtDesignation.Name = "TxtDesignation";
+            this.TxtDesignation.Size = new System.Drawing.Size(183, 22);
+            this.TxtDesignation.TabIndex = 17;
             // 
             // label4
             // 
@@ -319,9 +308,9 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(16, 62);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 17);
+            this.label4.Size = new System.Drawing.Size(72, 17);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Mot de passe : ";
+            this.label4.Text = "Numéro : ";
             // 
             // label2
             // 
@@ -329,9 +318,9 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(16, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 17);
+            this.label2.Size = new System.Drawing.Size(97, 17);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Nom d\'utilisateur : ";
+            this.label2.Text = "Désignation : ";
             // 
             // UcCompte
             // 
@@ -384,9 +373,8 @@
         private System.Windows.Forms.DataGridView GridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox TxtPassword;
-        private System.Windows.Forms.TextBox TxtUsername;
+        private System.Windows.Forms.TextBox TxtNumero;
+        private System.Windows.Forms.TextBox TxtDesignation;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
     }

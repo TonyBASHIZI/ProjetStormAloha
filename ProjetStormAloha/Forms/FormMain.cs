@@ -157,5 +157,15 @@ namespace ProjetStormAloha.Forms
             };
             form.ShowDialog(this);
         }
+
+        private void MenuGestionPos_Click(object sender, EventArgs e)
+        {
+            form = new FormPos
+            {
+                Icon = Icon,
+                ShowInTaskbar = false
+            };
+            form.ShowDialog(this);
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetStormAloha.Classes
 {
-    class ClsAgent
+    public class Agent
     {
     }
 }

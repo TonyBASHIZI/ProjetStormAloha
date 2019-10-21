@@ -28,11 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.RptViewer = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.SuspendLayout();
+            // 
+            // RptViewer
+            // 
+            this.RptViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RptViewer.Location = new System.Drawing.Point(0, 0);
+            this.RptViewer.Name = "RptViewer";
+            this.RptViewer.Size = new System.Drawing.Size(834, 461);
+            this.RptViewer.TabIndex = 0;
+            // 
+            // FormReport
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(834, 461);
+            this.Controls.Add(this.RptViewer);
+            this.Name = "FormReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormReport";
+            this.Load += new System.EventHandler(this.FormReport_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer RptViewer;
     }
 }

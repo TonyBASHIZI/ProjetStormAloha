@@ -94,7 +94,7 @@
             // 
             this.MenuConnection.ImageTransparentColor = System.Drawing.Color.Black;
             this.MenuConnection.Name = "MenuConnection";
-            this.MenuConnection.Size = new System.Drawing.Size(152, 22);
+            this.MenuConnection.Size = new System.Drawing.Size(143, 22);
             this.MenuConnection.Text = "&Connexion";
             this.MenuConnection.Click += new System.EventHandler(this.MenuConnection_Click);
             // 
@@ -166,6 +166,7 @@
             this.MenuGestionPos.Name = "MenuGestionPos";
             this.MenuGestionPos.Size = new System.Drawing.Size(184, 22);
             this.MenuGestionPos.Text = "Gestion des POS";
+            this.MenuGestionPos.Click += new System.EventHandler(this.MenuGestionPos_Click);
             // 
             // MenuGestionAgent
             // 
