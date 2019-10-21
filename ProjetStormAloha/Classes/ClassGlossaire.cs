@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetStormAloha.Classes
 {
-    class ClsSite
+    public class Glossaire
     {
     }
 }
